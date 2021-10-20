@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Condtional Statements</title>
+
+</head>
+<body>
+<h1>We are learning conditional statements</h1>
+<p id="sample"></p>
+<script>
+	var age = prompt("What is your age?");
+	//if else statements
+	if(age<18){
+		document.write("You are not eligible to vote");
+	}
+	else if(age>60){
+		document.write("You are considered as Higer Citizen");
+	}
+	else{
+		document.write("You are eligible to vote");
+	}
+let day;
+//Switch Satements
+switch(new Date().getDay()){
+	case 0:
+	day = "Sunday";
+	break;
+	case 1:
+	day = "Monday";
+	break;
+	case 2:
+	day = "Tuesday";
+	break;
+	case 3:
+	day = "Wednesday";
+	break;
+	case 4:
+	day = "Thursday";
+	break;
+	case 5:
+	day = "Friday";
+	break;
+	case 6:
+	day = "Saturday";
+	break;
+	default:
+	day = "No other days";
+
+}
+document.getElementById("sample").innerHTML = "Today" + "is" + day;
+var d = new Date();
+document.write(d.getDay());
+</script>
+</body>
+</html>
+
